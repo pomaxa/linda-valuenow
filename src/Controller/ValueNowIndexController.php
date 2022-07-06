@@ -11,8 +11,11 @@ class ValueNowIndexController extends AbstractController
     #[Route('/', name: 'app_value_now_index')]
     public function index(): Response
     {
+        $user = $this->getUser();
+
         return $this->render('value_now_index/index.html.twig', [
             'controller_name' => 'ValueNowIndexController',
+            'user' => $user,
         ]);
     }
 }
