@@ -4,7 +4,8 @@ WORKDIR "/application"
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -; \
     apt-get update; \
     apt-get -y --no-install-recommends install \
-        git \ 
+        git \
+        nodejs \
         php8.0-gd \
         php8.0-memcached \ 
         php8.0-mysql \
