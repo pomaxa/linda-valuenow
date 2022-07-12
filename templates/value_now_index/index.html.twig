@@ -11,10 +11,8 @@
 <div class="example-wrapper">
     <h1>Hello {{ user.name | default('Anon') }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/mnt/storage/playground/linda-valuenow/src/Controller/ValueNowIndexController.php'|file_link(0) }}">src/Controller/ValueNowIndexController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/mnt/storage/playground/linda-valuenow/templates/value_now_index/index.html.twig'|file_link(0) }}">templates/value_now_index/index.html.twig</a></code></li>
-    </ul>
+    {{ form(form) }}
+
+
 </div>
 {% endblock %}

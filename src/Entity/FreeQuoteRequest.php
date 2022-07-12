@@ -31,11 +31,17 @@ class FreeQuoteRequest
     #[ORM\Column(type: 'string', length: 255)]
     private $phone;
 
+    //TODO: add status ENUM
     #[ORM\Column(type: 'string', length: 255)]
     private $status;
 
     #[ORM\Column(type: 'datetime_immutable')]
     private $createdAt;
+
+    public function __construct()
+    {
+        $this->createdAt = new \DateTimeImmutable();
+    }
 
     public function getId(): ?int
     {
